@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resolve AI - Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="chat">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="chat.html">Chat</a>
+    <a href="journal.html">Mood Journal</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <main>
+    <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/chat-2025786_1280.png" alt="Chat illustration" class="illustration">
+    <h2>AI Chat</h2>
+    <div class="chat-window">
+      <div class="message ai">Hi! How are you feeling today?</div>
+      <div class="message user">[Your message here]</div>
+      <!-- More messages will appear here -->
+    </div>
+    <form class="chat-input" onsubmit="return false;">
+      <input type="text" placeholder="Type your message..." id="userInput">
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resolve AI - Mood Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="journal">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="chat.html">Chat</a>
+    <a href="journal.html">Mood Journal</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <main>
+    <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/checklist-1295319_1280.png" alt="Mood Journal illustration" class="illustration">
+    <h2>Mood Journal</h2>
+    <form id="journalForm">
+      <textarea id="journalEntry" placeholder="How are you feeling today?" required></textarea>
+      <button type="submit">Add Entry</button>
+    </form>
+    <section id="journalEntries">
+      <!-- Journal entries will appear here -->
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 
