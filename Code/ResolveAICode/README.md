@@ -52,12 +52,6 @@ Resolve AI is a mobile-first, AI-powered mental wellness companion designed to s
    ```
 5. Open your browser and go to [http://localhost:5000](http://localhost:5000)
 
-## Customization
-- Replace `static/img/resolveai-logo.png` with your own calming illustration or logo.
-- Update AI backend logic in `app.py` for more advanced emotional intelligence or connect to OpenAI.
-
-## License
-This project is provided for educational and wellness purposes. All code and content are original and free from plagiarism.
 
 ---
 Resolve AI – Your Personal Mental Wellness Companion
