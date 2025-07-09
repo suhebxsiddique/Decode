@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resolve AI – Your Personal Mental Wellness Companion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+  <header class="resolve-header" aria-label="Welcome">
+    <div class="resolve-logo" aria-hidden="true">
+      <!-- Placeholder for calming illustration/logo -->
+      <img src="{{ url_for('static', filename='img/resolveai-logo.png') }}" alt="Resolve AI Logo" style="max-width: 120px; border-radius: 50%; box-shadow: 0 2px 8px #b3c6e6;" />
+    </div>
+    <h1 class="resolve-title">Resolve AI</h1>
+    <p class="resolve-tagline">Your Personal Mental Wellness Companion</p>
+    <button class="resolve-cta" id="start-journey" aria-label="Start Your Journey">Start Your Journey</button>
+  </header>
+  <main id="chat-section" class="resolve-chat-section" aria-label="AI Chat Interface" style="display:none;">
+    <section class="chat-window" aria-live="polite">
+      <div id="chat-messages" class="chat-messages" tabindex="0" aria-label="Chat messages"></div>
+      <form id="chat-form" class="chat-form" autocomplete="off" aria-label="Send a message">
+        <input type="text" id="user-input" class="chat-input" placeholder="Type your message..." aria-label="Message input" required />
+        <button type="submit" class="chat-send-btn" aria-label="Send">Send</button>
+      </form>
+      <div id="suggestions" class="chat-suggestions" aria-label="Message suggestions"></div>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='js/bot.js') }}"></script>
+</body>
+</html>
